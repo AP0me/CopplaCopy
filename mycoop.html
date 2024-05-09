@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coppola – Movie and Film Production Theme</title>
+</head>
+<style>
+  html, body{
+    margin: 0;
+    height: 100%;
+    width:  100%;
+  }
+  body{
+    background-color: black;
+    color: white;
+  }
+  .flow-down{
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .nav-fixer{
+    z-index: 10;
+    position: fixed;
+    display: grid;
+    width: 100%;
+  }
+  .nav-fixer:hover{
+    background-color: black;
+  }
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    width: calc(100% - 100px);
+    height: 120px;
+    justify-self: center;
+    align-self: center;
+  }
+  .site-name{
+    font-size: 30px;
+    align-self: center;
+  }
+  .nav-btn-list{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: center;
+    align-self: center;
+  }
+  .ticket-btn-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    justify-self:end;
+    align-self: center;
+  }
+  .car-join{
+    position: relative;
+    display: grid;
+    height: min-content;
+  }
+  .car-bck{
+    background-image: url("car-bck.png");
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    z-index: -1;
+  }
+  .car-self{
+    z-index: 0;
+    background-image: url("./Coppola_index_files/zh1-rev-car-new.png");
+    width: 70%;
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: end;
+  }
+  .loong{
+    height: 1000px;
+  }
+</style>
+<body>
+  <div class="flow-down">
+    <div class="nav-fixer">
+      <div class="nav-bar">
+        <div class="site-name">Coppola</div>
+        <div class="nav-btn-list">
+          <div>Home</div>
+          <div>Pages</div>
+          <div>Portfolio</div>
+          <div>Blog</div>
+          <div>Shop</div>
+        </div>
+        <div class="ticket-btn-list">
+          <div>Get Tickets</div>
+          <div>Sdbr</div>
+        </div>
+      </div>
+    </div>
+    <div class="car-join">
+      <div class="car-bck"></div>
+      <div class="car-self"></div>
+    </div>
+    <div class="loong"></div>
+  </div>
+</body>
+</html>
